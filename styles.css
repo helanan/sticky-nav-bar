@@ -1,0 +1,155 @@
+
+* {
+    outline: none;
+}
+
+body, html {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+html {
+    background: #a2c9dd;
+}
+
+body {
+    font-family: 'Yellowtail', cursive, sans-serif;
+    color: #0f2d40;
+    height: auto;
+}
+
+#container {
+    width: 560px;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+#navigation li a{
+      font-family: 'Quicksand', sans-serif;
+      font-weight: bold;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+    padding-left: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* #### HEADER ### */
+#parallax {
+    display: none;
+}
+
+#parallax {
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    height: 630px;
+    overflow: visible;
+    display: inline-block;
+}
+#parallax img {
+    position: absolute;
+}
+
+#wrap {
+    float: left;
+    height: auto;
+    min-width: 960px;
+    overflow: hidden;
+    width: 100%;
+    background-image: url(bg_naviEndScroll.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+   
+}
+
+#header {
+    width: 100%;
+    height: 695px;
+    clear: both;
+    position: sticky;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+
+
+/* #################### NAVIGATION ### */
+#navigationBack {
+    background: url(bg_naviEndScroll.jpg) repeat-x;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 62px;
+    opacity: 0.85;
+}
+
+/*#navigationBack*/
+#navigationBack.scrolled {
+    background: url(bg_naviEndScroll.jpg) no-repeat;
+    opacity: 1;
+}
+
+#navigation, ul {
+    list-style-type: none;
+}
+
+#navigation {
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+    width: 980px;
+}
+
+#navigation li {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 39px;
+}
+
+#navigation li:first-child {
+    margin-left: 0;
+}
+
+#navigation a {
+    color: #70b9df;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#navigation a:hover,#navigation a.active {
+    text-decoration: underline;
+}
+
+/* ###### STICKY ### */
+.sticky #container {
+    min-height: 100%;
+}
+
+.sticky #footer {
+    height: 200px;
+    width: 960px;
+    padding: 0;
+    margin: -200px auto 0;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+
+.sticky #contentContainer {
+    padding: 0 0 200px 0;
+}
+
